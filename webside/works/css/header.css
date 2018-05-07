@@ -1,6 +1,5 @@
 
-.hero-full-screen {
-  height: 100vh;
+.portfolio-hero-header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -10,54 +9,58 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: url("https://images.pexels.com/photos/378273/pexels-photo-378273.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
-  background-size: cover;
+  background-color: #fefefefe;
+  padding: 2rem 0;
 }
 
-.hero-full-screen .middle-content-section {
-  text-align: center;
-  color: #fefefe;
-}
-
-.hero-full-screen .top-content-section {
-  width: 100%;
-}
-
-.hero-full-screen .bottom-content-section {
-  padding: 1rem;
-}
-
-.hero-full-screen .bottom-content-section svg {
-  height: 3.75rem;
-  width: 3.75rem;
-  fill: #fefefe;
-}
-
-.hero-full-screen .top-bar {
-  background: transparent;
-}
-
-.hero-full-screen .top-bar .menu {
-  background: transparent;
-}
-
-.hero-full-screen .top-bar .menu-text {
-  color: #fefefe;
-}
-
-.hero-full-screen .top-bar .menu li {
+.portfolio-hero-header-description {
+  list-style-type: none;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
 }
 
-.hero-full-screen .top-bar .menu a {
-  color: #fefefe;
-  font-weight: bold;
+.portfolio-hero-header-description li {
+  -webkit-flex: 1 0 200px;
+      -ms-flex: 1 0 200px;
+          flex: 1 0 200px;
+  text-align: center;
+  padding: 0 1.25rem;
+  position: relative;
+  white-space: nowrap;
+}
+
+.portfolio-hero-header-description li:before {
+  content: "*";
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.portfolio-hero-header-description li:first-child:before {
+  content: "";
+}
+
+.portfolio-hero-header-menu {
+  list-style-type: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.portfolio-hero-header-menu li {
+  margin: 1.25rem;
+}
+
+.portfolio-hero-header-menu li a {
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
 }

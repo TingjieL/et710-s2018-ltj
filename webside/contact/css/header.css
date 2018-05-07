@@ -1,63 +1,85 @@
 
-.hero-full-screen {
-  height: 100vh;
+.mobile-app-dashboard-header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40vh;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("https://images.pexels.com/photos/59519/pexels-photo-59519.jpeg?h=350&auto=compress&cs=tinysrgb") center center no-repeat;
+}
+
+.mobile-app-dashboard-header h1 {
+  color: #fefefe;
+  text-align: center;
+  font-size: 22px;
+  background: rgba(254, 254, 254, 0.2);
+}
+
+.mobile-app-dashboard {
+  background-color: transparent;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  height: 60vh;
+}
+
+.mobile-app-dashboard a {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 0;
+  color: #8a8a8a;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: url("https://images.pexels.com/photos/378273/pexels-photo-378273.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
-  background-size: cover;
+  border-bottom: 1px solid #8a8a8a;
 }
 
-.hero-full-screen .middle-content-section {
-  text-align: center;
-  color: #fefefe;
+.mobile-app-dashboard a:nth-child(2n-1) {
+  border-right: 1px solid #8a8a8a;
 }
 
-.hero-full-screen .top-content-section {
-  width: 100%;
-}
-
-.hero-full-screen .bottom-content-section {
-  padding: 1rem;
-}
-
-.hero-full-screen .bottom-content-section svg {
-  height: 3.75rem;
-  width: 3.75rem;
-  fill: #fefefe;
-}
-
-.hero-full-screen .top-bar {
-  background: transparent;
-}
-
-.hero-full-screen .top-bar .menu {
-  background: transparent;
-}
-
-.hero-full-screen .top-bar .menu-text {
-  color: #fefefe;
-}
-
-.hero-full-screen .top-bar .menu li {
+.mobile-app-dashboard .mobile-app-dashboard-inner {
+  height: 75px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.hero-full-screen .top-bar .menu a {
-  color: #fefefe;
-  font-weight: bold;
+.mobile-app-dashboard .mobile-app-dashboard-inner img,
+.mobile-app-dashboard .mobile-app-dashboard-inner svg,
+.mobile-app-dashboard .mobile-app-dashboard-inner i {
+  max-width: 3.125rem;
+  max-height: 3.125rem;
+  font-size: 3.125rem;
 }
